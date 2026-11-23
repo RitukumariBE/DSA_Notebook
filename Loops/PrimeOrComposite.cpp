@@ -18,11 +18,13 @@ int main() {
 
     bool flag = false ; // false means prime
     for (int i = 2 ; i <= n - 1 ; i ++ ) {
-        if ( n % i == 0 ){
+        if ( n % i == 0 ){ // factor mil gya except 1 and n 
             flag = true ;
             break ;
         }
     }
+
+    if(n == 1) cout << "Neither a Prime nor Composite Number." ;
     if(flag == false) cout << "Prime number" ;
     else cout << "Composite Number" ;
 
